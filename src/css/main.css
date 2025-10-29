@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;900&display=swap');
+
+:root {
+  --deep-space: #0B1020;
+  --neon-teal: #00D9D9;
+  --violet: #7A5AF8;
+  --electric-blue: #00F0FF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--deep-space);
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#webgl-canvas,
+#brain-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none; /* so text is clickable */
+}
+
+nav, main, .hero-title, .hero-subtitle {
+  position: relative; /* or absolute/fixed if you want them fixed */
+  z-index: 2;
+}
+
+.logo {
+  font-size: 32px;
+  color: var(--neon-teal);
+  font-weight: bold;
+  position: relative; /* or absolute/fixed if you want them fixed */
+  z-index: 2;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--violet);
+  border-top-color: var(--neon-teal);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 0;
+}
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
+
+/* More core styles for navigation, sections, cards, etc. As per your design */
+/* Add contrast, focus, and accessible styles */

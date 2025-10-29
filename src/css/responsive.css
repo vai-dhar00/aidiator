@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+    .nav-menu { font-size: 15px; }
+    .portfolio-grid, .services-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .logo { font-size: 22px; }
+    /* Hide desktop-only features, mobile styles */
+  }
+  

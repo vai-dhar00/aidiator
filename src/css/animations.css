@@ -1,0 +1,16 @@
+/* GSAP animation and text reveal styles */
+.hero-title .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: heroTitleIn 0.6s forwards;
+  }
+  @keyframes heroTitleIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add scroll fade, stagger, glow, and other animation classes as needed */
+  
